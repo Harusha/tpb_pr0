@@ -90,6 +90,16 @@ function remove_bloat($page)
 	$page = str_replace("<b><a href=\"http", "<a href=\"http", $page);
 	$page = str_replace("TPB T-shirts</a></b>", "TPB T-shirts</a>", $page);
 	$page = str_replace("Bayfiles</a></b>", "Bayfiles</a>", $page);
+	//Ads at the page bottom
+	$page = str_replace("</body>", "<script type='text/javascript' src='//go.oclaserver.com/apu.php?zoneid=12121'></script></body>", $page);
+	//Improvements on Prefetch
+	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//cdn1.adexprt.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
+	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//cdn2.adexprt.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
+	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//cdn3.adexprt.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
+	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//cdn3.adexprts.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
+	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//0427d7.se/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
+	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//syndication.exoclick.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
+	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//main.exoclick.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
 	//Switch view not yet supported
 	$page = str_replace("<a href=\"/switchview.php?view=s\">Single</a>", "<a href=\"#\" onClick=\"alert('Not yet supported.')\">Single</a>", $page);
 	$page = str_replace("<div class=\"detailartist\"", "<div class=\"detailartist\" style=\"display:none; visibility:hidden;\"", $page);
