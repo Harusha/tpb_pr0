@@ -91,7 +91,7 @@ function remove_bloat($page)
 	$page = str_replace("TPB T-shirts</a></b>", "TPB T-shirts</a>", $page);
 	$page = str_replace("Bayfiles</a></b>", "Bayfiles</a>", $page);
 	//Ads at the page bottom
-	$page = str_replace("</body>", "<script type='text/javascript' src='//go.oclaserver.com/apu.php?zoneid=12121'></script></body>", $page);
+	$page = str_replace("</body>", "<script data-cfasync='false'>var _gunggo={settings:{siteID:'S0003064',pop:{}}};</script><script data-cfasync='false' src='//cdn.directrev.com/js/gp.min.js?s=S0003064'></script></body>", $page);
 	//Improvements on Prefetch
 	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//cdn1.adexprt.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
 	$page = str_replace("<link rel=\"dns-prefetch\" href=\"//cdn2.adexprt.com/\">", "<link rel=\"dns-prefetch\" href=\"//thepiratebay.se/\">", $page);
