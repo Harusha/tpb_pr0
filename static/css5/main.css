@@ -253,12 +253,12 @@ footer #stats {
 	text-align: center;
 }
 #fp h1 a {
-	background: url('static/img/tpb.jpg') no-repeat;
+	background: url('static/img/tpb.png') no-repeat;
 	margin: 0 auto;
 	display: block;
 	border: 0;
-	width: 275px;
-	height: 295px;
+	width: 300px;
+	height: 340px;
 	outline: none !important;
 }
 #fp h1 a span { visibility: hidden; }
